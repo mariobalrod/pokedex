@@ -2,6 +2,10 @@ import React from 'react';
 import {useQuery} from 'react-query';
 import axios from 'axios';
 
+import PokemonsContainer from './components/PokemonsContainer';
+
+import './styles/main.css';
+
 export default function App () {
 
   const [ page, setPage ] = React.useState(0);
@@ -25,21 +29,21 @@ export default function App () {
 
   return (
     <div className="App">
-      {console.log(data)}
+
+      <div className="pokeball">
+        
+      </div>
+
       {
       
         isLoading ? (
-          <div>Loading...</div>
+          <div className="loading">
+            Loading...
+          </div>
         ) : error ? (
           <div>Error: {error.message}</div>
         ) : (
-          <ul>
-            {data.results.map((pokemon, index) => (
-              <li key={index}>
-                {pokemon.name}
-              </li>
-            ))}
-          </ul>
+          <PokemonsContainer pokemons={data.results} />
         )
 
       }
@@ -47,8 +51,9 @@ export default function App () {
       { 
 
         !isLoading ? (
-          <div>
+          <div className="buttonsContainer">
             <button
+              className="button"
               onClick={() => setPage(page => page - 20)}
               disabled={prev === null}
             >
@@ -56,6 +61,7 @@ export default function App () {
             </button>
 
             <button
+              className="button"
               onClick={() => setPage(page => page + 20)}
               disabled={next === null}
             >
