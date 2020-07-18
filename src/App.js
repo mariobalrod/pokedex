@@ -30,6 +30,10 @@ export default function App () {
   return (
     <div className="App">
 
+      <div className="title">
+        Pokedex
+      </div>
+
       <div className="pokeball">
         
       </div>
@@ -48,7 +52,7 @@ export default function App () {
 
       }
 
-      { 
+      {/* { 
 
         !isLoading ? (
           <div className="buttonsContainer">
@@ -72,7 +76,7 @@ export default function App () {
           ''
         )
       
-      }
+      } */}
 
     </div>
   );

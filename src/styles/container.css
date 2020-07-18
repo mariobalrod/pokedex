@@ -1,0 +1,32 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    width: 100%;
+    margin-top: 119px;
+
+    position: relative;
+
+    border: 2px solid transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    padding: 0px;
+    
+    position: relative;
+    width: 80%;
+    border: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Inside Auto Layout */
+
+    justify-content: center;
+    order: 2;
+    align-self: center;
+}

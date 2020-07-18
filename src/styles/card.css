@@ -1,0 +1,214 @@
+
+
+/*-----------Principal-------------*/
+
+.card {
+    position: relative;
+    width: 234px;
+    height: 180px;
+
+    /* Gray 6 */
+
+    background: #F2F2F2;
+    border-radius: 20px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: center;
+    margin: 35px;
+}
+
+.foreground {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background: #F2F2F2;
+
+    position: absolute;
+    width: 192px;
+    height: 132px;
+    left: 20px;
+    top: 20px;
+}
+
+/*-----------Section 1-------------*/
+
+.section1 {
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: static;
+    width: 192px;
+    height: 42px;
+    left: 0px;
+    top: 0px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.name {
+    text-transform: capitalize;
+
+    background: #F2F2F2;
+    position: static;
+    width: 50px;
+    left: 0px;
+    top: 50%;
+    bottom: 0%;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    margin: 0px 0px;
+}
+
+.number {
+    background: #F2F2F2;
+    position: static;
+    width: 48px;
+    right: 0px;
+    top: 0%;
+    bottom: 50%;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    /* Gray 3 */
+
+    color: #828282;
+    mix-blend-mode: normal;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: flex-end;
+    margin: 0px 0px;
+}
+
+/*-------------Section 2-------------*/
+
+.section2 {
+    background: #F2F2F2;
+    position: static;
+    width: 192px;
+    height: 90px;
+    left: 0px;
+    top: 28px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.image {
+    position: absolute;
+    left: 50%;
+    right: -3.1%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.subsection {
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    position: absolute;
+    width: 39px;
+    height: 18px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.chip {
+    
+    display: flex;
+    flex-direction: row;
+    padding: 2px 6px;
+
+    position: static;
+    width: 52px;
+    height: 18px;
+    left: 0px;
+    top: 18px;
+
+    /* Gray 5 */
+
+    background: #E0E0E0;
+    border-radius: 8px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    margin: 0px 6px;
+}
+
+.chipText {
+    position: static;
+    top: 16.67%;
+    bottom: 16.67%;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 12px;
+    /* identical to box height, or 133% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+    background: #E0E0E0;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: center;
+}

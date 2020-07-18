@@ -7,8 +7,10 @@ import '../styles/container.css';
 export default function PokemonsContainer (props) {
 
     return(
-        <div className="container">
-            {props.pokemons.map((pokemon) => <PokemonCard key={pokemon.url} name={pokemon.name} />)}
+        <div className="column">
+            <div className="row">
+                {props.pokemons.map((pokemon) => <PokemonCard key={pokemon.url} name={pokemon.name} />)}
+            </div>
         </div>
     );
 }
