@@ -8,14 +8,16 @@ export default function PokemonCard (props) {
         <div className="card">
             <div className="foreground">
                 <div className="section1">
-                    <h1 className="name">{props.name}</h1>
-                    <h2 className="number">#000</h2>
+                    <h1 className="name">{props.data.name}</h1>
+                    <h2 className="number">{'#'+props.data.id.toString().padStart(3, "0")}</h2>
                 </div>
                 <div className="section2">
-                    {/* <img className="image" alt="image" /> */}
+                    <img className="image" src={props.data.sprites.front_default} alt="pokemon" />
                     <div className="subsection">
                         <div className="chip">
-                            <h2 className="chipText">ability</h2>
+                            {
+                                props.data.types.map((type, i) => <h4 key={i} className="chipText">{type.type.name}</h4>)
+                            }
                         </div>
                     </div>
                 </div>
