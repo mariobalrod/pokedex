@@ -1,3 +1,5 @@
+[Pokedex](https://z1-lab-frontend-mariobalrod.netlify.app/)
+
 ## Pokedex 
 
 Pokedex with React and PokeApi.
