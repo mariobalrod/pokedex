@@ -19,7 +19,7 @@ export default function App () {
 
   //Search
   const [ searchTerm, setSearchTerm ] = React.useState('');
-  const [ searchResult, setSearchResult ] = React.useState();
+  const [ searchResult, setSearchResult ] = React.useState([]);
 
   const { data, isLoading, error } = useQuery (
     ['pokemons', {page}], 
@@ -44,10 +44,11 @@ export default function App () {
   // Search Bar
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(searchTerm)
+    const arr = [];
     axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
       .then(data => {
-        setSearchResult(data.data);
+        arr.push(data.data);
+        setSearchResult(arr);
       })
       .catch(err =>  alert("Nothing found"));
   }
@@ -61,7 +62,7 @@ export default function App () {
 
       <img src={PokeballHome} className="pokeball" alt="pokeball"/>
 
-      <div className="title">
+      <div className="title" onClick={() => window.location.reload(true)}>
         Pokedex
       </div>
 
@@ -73,14 +74,20 @@ export default function App () {
         ) : error ? (
           <div>Error: {error.message}</div>
         ) : (
-          <PokemonsContainer pokemons={data} />
+          
+            (searchResult.length > 0) ? (
+              <PokemonsContainer pokemons={searchResult} />
+            ) : (
+              <PokemonsContainer pokemons={data} />
+            )
+          
         )
       }
 
 
       {/* Pagination Container */}
       { 
-        !isLoading ? (
+        !isLoading && searchResult.length === 0 ? (
           <div className="buttonsContainer">
             <button
               className="button"

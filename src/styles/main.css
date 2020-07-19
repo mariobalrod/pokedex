@@ -24,6 +24,11 @@
     background-color: transparent;
 }
 
+.title:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .buttonsContainer {
     margin: 90px auto;
     width: max-content;
