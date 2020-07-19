@@ -159,8 +159,7 @@
     padding: 0px;
 
     position: absolute;
-    width: 58px;
-    height: 27px;
+    width: auto;
     left: 0px;
     bottom: 0px;
 }
@@ -186,7 +185,7 @@
     flex: none;
     order: 1;
     align-self: flex-start;
-    margin: 0px 3px;
+    margin: 5px 3px;
 }
 
 .chipText {
