@@ -1,35 +1,35 @@
 .column {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
 
-    width: 100%;
+  width: 100%;
 
-    position: relative;
+  position: relative;
 
-    border: 2px solid transparent;
-    justify-content: center;
-    align-items: center;
+  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
 
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .row {
-    display: flex;
-    padding: 0px;
-    
-    position: relative;
-    width: 90%;
-    border: 1px solid transparent;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 0px;
 
-    /* Inside Auto Layout */
+  position: relative;
+  width: 90%;
+  border: 1px solid transparent;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    justify-content: center;
-    order: 2;
-    align-self: center;
+  /* Inside Auto Layout */
 
-    background-color: transparent;
+  justify-content: center;
+  order: 2;
+  align-self: center;
+
+  background-color: transparent;
 }

@@ -1,235 +1,233 @@
 /*-------------Card Hover-------------*/
 .card:hover {
-    opacity: 0.6;
-    cursor: pointer;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 /*-----------Principal-------------*/
 
 .card {
-    position: relative;
-    width: 234px;
-    height: 180px;
+  position: relative;
+  width: 234px;
+  height: 180px;
 
-    /* Gray 6 */
+  /* Gray 6 */
 
-    background: #F2F2F2;
-    border-radius: 20px;
+  background: #f2f2f2;
+  border-radius: 20px;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 1;
-    align-self: center;
-    margin: 35px;
+  flex: none;
+  order: 1;
+  align-self: center;
+  margin: 35px;
 }
 
 .foreground {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    background: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  background: #f2f2f2;
 
-    position: absolute;
-    width: 192px;
-    height: 132px;
-    left: 20px;
-    top: 20px;
+  position: absolute;
+  width: 192px;
+  height: 132px;
+  left: 20px;
+  top: 20px;
 }
 
 /*-----------Section 1-------------*/
 
 .section1 {
-    background: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
 
-    position: static;
-    width: 192px;
-    height: 42px;
-    left: 0px;
-    top: 0px;
+  position: static;
+  width: 192px;
+  height: 42px;
+  left: 0px;
+  top: 0px;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 0;
-    align-self: center;
-    margin: 0px 0px;
+  flex: none;
+  order: 0;
+  align-self: center;
+  margin: 0px 0px;
 }
 
 .name {
-    text-transform: capitalize;
+  text-transform: capitalize;
 
-    background: #F2F2F2;
-    position: static;
-    width: auto;
-    left: 0px;
-    top: 50%;
-    bottom: 0%;
+  background: #f2f2f2;
+  position: static;
+  width: auto;
+  left: 0px;
+  top: 50%;
+  bottom: 0%;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height, or 100% */
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    /* Gray 2 */
+  /* Gray 2 */
 
-    color: #4F4F4F;
+  color: #4f4f4f;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 1;
-    align-self: flex-start;
-    margin: 0px 0px;
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  margin: 0px 0px;
 }
 
 .number {
-    background: #F2F2F2;
-    position: static;
-    width: 48px;
-    right: 0px;
-    top: 0%;
-    bottom: 50%;
+  background: #f2f2f2;
+  position: static;
+  width: 48px;
+  right: 0px;
+  top: 0%;
+  bottom: 50%;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
-    /* identical to box height, or 100% */
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  /* identical to box height, or 100% */
 
-    display: flex;
-    align-items: center;
-    text-align: right;
+  display: flex;
+  align-items: center;
+  text-align: right;
 
-    /* Gray 3 */
+  /* Gray 3 */
 
-    color: #828282;
-    mix-blend-mode: normal;
+  color: #828282;
+  mix-blend-mode: normal;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 0;
-    align-self: flex-end;
-    margin: 0px 0px;
+  flex: none;
+  order: 0;
+  align-self: flex-end;
+  margin: 0px 0px;
 }
 
 /*-------------Section 2-------------*/
 
 .section2 {
-    background: #F2F2F2;
-    position: static;
-    width: 192px;
-    height: 90px;
-    left: 0px;
-    top: 28px;
+  background: #f2f2f2;
+  position: static;
+  width: 192px;
+  height: 90px;
+  left: 0px;
+  top: 28px;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 1;
-    align-self: center;
-    margin: 0px 0px;
+  flex: none;
+  order: 1;
+  align-self: center;
+  margin: 0px 0px;
 }
 
 .image {
-    position: absolute;
-    z-index: 1;
-    left: 55%;
-    right: -3.1%;
-    top: 25%;
-    bottom: 0%;
+  position: absolute;
+  z-index: 1;
+  left: 55%;
+  right: -3.1%;
+  top: 25%;
+  bottom: 0%;
 
-    background: transparent;
+  background: transparent;
 }
 
 .subsection {
-    background: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
 
-    position: absolute;
-    width: auto;
-    left: 0px;
-    bottom: 0px;
+  position: absolute;
+  width: auto;
+  left: 0px;
+  bottom: 0px;
 }
 
 .chip {
-    
-    display: flex;
-    flex-direction: row;
-    padding: 2px 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 2px 8px;
 
-    position: static;
-    width: auto;
-    height: 18px;
-    top: 27px;
+  position: static;
+  width: auto;
+  height: 18px;
+  top: 27px;
 
-    /* Gray 5 */
+  /* Gray 5 */
 
-    background: #E0E0E0;
-    border-radius: 12px;
+  background: #e0e0e0;
+  border-radius: 12px;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 1;
-    align-self: flex-start;
-    margin: 5px 3px;
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  margin: 5px 3px;
 }
 
 .chipText {
-    position: static;
-    top: 16.67%;
-    bottom: 16.67%;
+  position: static;
+  top: 16.67%;
+  bottom: 16.67%;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 9px;
-    line-height: 12px;
-    /* identical to box height, or 133% */
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 12px;
+  /* identical to box height, or 133% */
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-    /* Gray 2 */
+  /* Gray 2 */
 
-    color: #4F4F4F;
-    background: #E0E0E0;
+  color: #4f4f4f;
+  background: #e0e0e0;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 0;
-    align-self: center;
+  flex: none;
+  order: 0;
+  align-self: center;
 }
-
 
 /*-------------Pokeball-------------*/
 
 .pokeballCard {
-    position: absolute;
-    z-index: 0;
-    width: 131.44px;
-    height: 131.44px;
-    bottom: 0px;  
-    right: 0px; 
+  position: absolute;
+  z-index: 0;
+  width: 131.44px;
+  height: 131.44px;
+  bottom: 0px;
+  right: 0px;
 
-    mix-blend-mode: normal;
-    background: transparent;
-    opacity: 1;
+  mix-blend-mode: normal;
+  background: transparent;
+  opacity: 1;
 }

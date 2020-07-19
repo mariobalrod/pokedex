@@ -1,229 +1,228 @@
 .cardOverview {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 100px auto;
 
-    width: 30%;
-    height: auto;
-    position: relative;
+  width: 30%;
+  height: auto;
+  position: relative;
 
-    /* Gray 6 */
+  /* Gray 6 */
 
-    background-color: #F2F2F2;
-    border-radius: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
 }
 
 .content {
-    display: flex;
-    padding: 20px 10px;
-    
-    position: relative;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 20px 10px;
 
-    /* Inside Auto Layout */
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    justify-content: center;
-    order: 2;
-    align-self: center;
+  /* Inside Auto Layout */
 
-    background-color: transparent;
+  justify-content: center;
+  order: 2;
+  align-self: center;
+
+  background-color: transparent;
 }
 
 .box1 {
-    position: relative;
-    margin: auto;
-    width: 200px;
-    height: auto;
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: auto;
 
-    background: transparent;
+  background: transparent;
 }
 
 .box2 {
-    position: relative;
-    margin: auto;
-    padding: 20px;
-    width: 200px;
-    height: auto;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 200px;
+  height: auto;
 
-    background: transparent;
+  background: transparent;
 }
 
 .overviewImage {
-    width: 200px;
-    background-color: transparent;
+  width: 200px;
+  background-color: transparent;
 }
 
 .atribSection {
-    display: flex;
-    padding: 0px;
-    
-    position: relative;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 0px;
 
-    /* Inside Auto Layout */
+  position: relative;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    justify-content: center;
-    order: 2;
-    align-self: center;
+  /* Inside Auto Layout */
 
-    background-color: transparent;
+  justify-content: center;
+  order: 2;
+  align-self: center;
+
+  background-color: transparent;
 }
 
 .atrib {
-    margin-right: 10px;
-    padding: 0px;
+  margin-right: 10px;
+  padding: 0px;
 
-    display: flex;
-    justify-content: center;
-    order: 2;
-    align-self: center;
+  display: flex;
+  justify-content: center;
+  order: 2;
+  align-self: center;
 
-    background-color: transparent;
+  background-color: transparent;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 13px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
 }
 
 .atrib > p {
-    margin: 5px;
-    background-color: transparent;
+  margin: 5px;
+  background-color: transparent;
 }
 
 .nameOverview {
-    font-size: 20px;
-    text-align: center;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    color: #4F4F4F;
+  font-size: 20px;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  color: #4f4f4f;
 
-    text-transform: capitalize;
+  text-transform: capitalize;
 
-    background: transparent;
+  background: transparent;
 }
 
 .typesSection {
-    display: flex;
-    padding: 0px;
-    
-    position: relative;
-    width: auto;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 0px;
 
-    /* Inside Auto Layout */
+  position: relative;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    justify-content: center;
-    order: 2;
-    align-self: center;
+  /* Inside Auto Layout */
 
-    background-color: transparent;
+  justify-content: center;
+  order: 2;
+  align-self: center;
+
+  background-color: transparent;
 }
 
 .typesElements {
-    text-transform: capitalize;
-    font-size: 14px;
-    text-align: center;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
 
-    display: flex;
-    flex-direction: row;
-    padding: 2px 8px;
+  display: flex;
+  flex-direction: row;
+  padding: 2px 8px;
 
-    position: static;
-    width: auto;
-    height: 18px;
-    top: 27px;
+  position: static;
+  width: auto;
+  height: 18px;
+  top: 27px;
 
-    /* Gray 5 */
-    border-radius: 12px;
+  /* Gray 5 */
+  border-radius: 12px;
 
-    /* Inside Auto Layout */
+  /* Inside Auto Layout */
 
-    flex: none;
-    order: 1;
-    align-self: flex-start;
-    margin: 5px 3px;
+  flex: none;
+  order: 1;
+  align-self: flex-start;
+  margin: 5px 3px;
 }
 
 .subtitle {
-    background-color: transparent;
+  background-color: transparent;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 13px;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
 
-    text-align: center;
+  text-align: center;
 
-    padding: 5px;
+  padding: 5px;
 }
 
 .wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .progress-bar {
-    width: 100%;
-    background-color: #e0e0e0;
-    padding: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  width: 100%;
+  background-color: #e0e0e0;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .progress-bar-fill {
-    display: block;
-    height: 15px;
-    border-radius: 3px;
+  display: block;
+  height: 15px;
+  border-radius: 3px;
 
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 13px;
-    color: white;
-    
-    transition: width 500ms ease-in-out;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
+  color: white;
+
+  transition: width 500ms ease-in-out;
 }
 
 .goBackButton {
-    margin: 10px auto;
-    margin-bottom: 30px;
-    width: 30px;
-    color: #4F4F4F;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    background-color: transparent;
-    border-radius: 70%;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  width: 30px;
+  color: #4f4f4f;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 70%;
 }
 
 .insideButton {
-    color: #4F4F4F;
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    background-color: transparent;
-    border-radius: 70%;
+  color: #4f4f4f;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 70%;
 }
 
-
 @media (max-width: 1000px) {
-    .cardOverview {
-        width: 70%;
-    }
+  .cardOverview {
+    width: 70%;
+  }
 }
