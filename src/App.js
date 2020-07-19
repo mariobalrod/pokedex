@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import PokemonsContainer from './components/PokemonsContainer';
 import SearchBar from './components/SearchBar';
+import OverviewCard from './components/OverviewCard';
 
 import './styles/main.css';
 import PokeballHome from './svg/pokeballHome.svg';
@@ -20,6 +21,10 @@ export default function App () {
   //Search
   const [ searchTerm, setSearchTerm ] = React.useState('');
   const [ searchResult, setSearchResult ] = React.useState([]);
+
+  //Overview 
+  const [ show, setShow ] = React.useState(false);
+  const [ pokemonOverview, setPokemonOverview ] = React.useState(null);
 
   const { data, isLoading, error } = useQuery (
     ['pokemons', {page}], 
@@ -57,6 +62,15 @@ export default function App () {
     setSearchTerm(e.target.value.toLowerCase());
   }
 
+  const showOverview = (pokemon) => {
+    setShow(!show);
+    if (pokemon !== null) {
+      setPokemonOverview(pokemon)
+    } else {
+      setPokemonOverview(null);
+    }
+  }
+
   return (
     <div className="App">
 
@@ -66,50 +80,60 @@ export default function App () {
         Pokedex
       </div>
 
-      <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} searchTerm={searchTerm} />
-
       {
-        isLoading ? (
-          <div className="loading"></div>
-        ) : error ? (
-          <div>Error: {error.message}</div>
+        show && pokemonOverview ? (
+          <React.Fragment>
+            <OverviewCard showOverview={showOverview} data={pokemonOverview} />
+          </React.Fragment>
         ) : (
-          
-            (searchResult.length > 0) ? (
-              <PokemonsContainer pokemons={searchResult} />
-            ) : (
-              <PokemonsContainer pokemons={data} />
-            )
-          
+          <React.Fragment>
+
+            <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} searchTerm={searchTerm} />
+            {
+              isLoading ? (
+                <div className="loading"></div>
+              ) : error ? (
+                <div>Error: {error.message}</div>
+              ) : (
+
+                    (searchResult.length > 0) ? (
+                      <PokemonsContainer pokemons={searchResult} showOverview={showOverview} />
+                    ) : (
+                        <PokemonsContainer pokemons={data} showOverview={showOverview} />
+                      )
+
+                  )
+            }
+
+            {/* Pagination Container */}
+            {
+              !isLoading && searchResult.length === 0 ? (
+                <div className="buttonsContainer">
+                  <button
+                    className="button"
+                    onClick={() => setPage(page => page - 10)}
+                    disabled={prev === null}
+                  >
+                    {'<'}
+                  </button>
+
+                  <button
+                    className="button"
+                    onClick={() => setPage(page => page + 10)}
+                    disabled={next === null}
+                  >
+                    {'>'}
+                  </button>
+                </div>
+              ) : (
+                  ''
+                )
+            }
+          </React.Fragment>
         )
       }
 
-
-      {/* Pagination Container */}
-      { 
-        !isLoading && searchResult.length === 0 ? (
-          <div className="buttonsContainer">
-            <button
-              className="button"
-              onClick={() => setPage(page => page - 10)}
-              disabled={prev === null}
-            >
-              {'<'}
-            </button>
-
-            <button
-              className="button"
-              onClick={() => setPage(page => page + 10)}
-              disabled={next === null}
-            >
-              {'>'}
-            </button>
-          </div>
-        ) : (
-          ''
-        )
       
-      }
     </div>
   );
 

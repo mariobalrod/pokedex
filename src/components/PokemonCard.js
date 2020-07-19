@@ -23,7 +23,7 @@ export default function PokemonCard (props) {
     const { id, name, sprites } = props.data;
 
     return(
-        <div className="card">
+        <div className="card" onClick={() => { props.showOverview(props.data)} }>
             <div className="foreground">
                 <div className="section1">
                     <h1 className="name">{name}</h1>

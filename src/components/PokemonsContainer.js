@@ -11,7 +11,7 @@ export default function PokemonsContainer (props) {
             <div className="row">
                 {
                     props.pokemons.map((pokemon, i) => {
-                        return (<PokemonCard key={i} data={pokemon} />)
+                        return (<PokemonCard key={i} data={pokemon} showOverview={props.showOverview} />)
                     })
                 }
             </div>
