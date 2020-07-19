@@ -1,0 +1,181 @@
+.cardOverview {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 100px auto;
+
+    width: 30%;
+    height: auto;
+    position: relative;
+
+    /* Gray 6 */
+
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    padding: 10px;
+    
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Inside Auto Layout */
+
+    justify-content: center;
+    order: 2;
+    align-self: center;
+
+    background-color: transparent;
+}
+
+.box1 {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: auto;
+
+    background: transparent;
+}
+
+.box2 {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+
+    background: transparent;
+}
+
+.overviewImage {
+    width: 200px;
+    background-color: transparent;
+}
+
+.atribSection {
+    display: flex;
+    padding: 0px;
+    
+    position: relative;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Inside Auto Layout */
+
+    justify-content: center;
+    order: 2;
+    align-self: center;
+
+    background-color: transparent;
+}
+
+.atrib {
+    margin-right: 10px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    order: 2;
+    align-self: center;
+
+    background-color: transparent;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.atrib > p {
+    margin: 5px;
+    background-color: transparent;
+}
+
+.nameOverview {
+    font-size: 20px;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    color: #4F4F4F;
+
+    text-transform: capitalize;
+
+    background: transparent;
+}
+
+.typesSection {
+    display: flex;
+    padding: 0px;
+    
+    position: relative;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Inside Auto Layout */
+
+    justify-content: center;
+    order: 2;
+    align-self: center;
+
+    background-color: transparent;
+}
+
+.typesElements {
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    padding: 2px 8px;
+
+    position: static;
+    width: auto;
+    height: 18px;
+    top: 27px;
+
+    /* Gray 5 */
+    border-radius: 12px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    align-self: flex-start;
+    margin: 5px 3px;
+}
+
+.subtitle {
+    background-color: transparent;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 13px;
+
+    text-align: center;
+
+    padding: 5px;
+}
+
+
+@media (max-width: 1000px) {
+    .cardOverview {
+        width: 70%;
+    }
+}
