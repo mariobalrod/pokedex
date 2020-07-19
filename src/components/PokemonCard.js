@@ -12,8 +12,7 @@ export default function PokemonCard (props) {
     }, [props.data]);
 
     const setNames = (types) => {
-        const temp = []; 
-        console.log('Array', types)
+        const temp = [];
         for (let i = 0; i<types.length; i++) {
             const name = types[i].type.name;
             temp.push(name);
@@ -38,8 +37,8 @@ export default function PokemonCard (props) {
                             {
                                 typesNames.map((name, i) => {
                                     return (
-                                        <div className="chip">
-                                            <h4 key={i} className="chipText">{name}</h4>
+                                        <div className="chip" key={i}>
+                                            <h4 className="chipText">{name}</h4>
                                         </div>
                                     );
                                 })

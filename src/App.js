@@ -17,29 +17,44 @@ export default function App () {
   const [ next, setNext ] = React.useState();
   const [ prev, setPrev ] = React.useState();
 
+  //Search
+  const [ searchTerm, setSearchTerm ] = React.useState('');
+  const [ searchResult, setSearchResult ] = React.useState();
+
   const { data, isLoading, error } = useQuery (
     ['pokemons', {page}], 
     async () => {
       const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=${page}&limit=10`);
-
-      // Limits for Pagination
+      // Limits for Pagination Controllers
       const {next} = data;
       setNext(next);
       const {previous} = data;
       setPrev(previous);
-
+      // Modify data to an Array with Pokemons Object
       const { results } = data;
-
       const helper = [];
-
       for (let i = 0; i < results.length; i++) {
         const pokemon = await axios.get(results[i].url);
         helper.push(pokemon.data);
       }
-
       return helper;
     }
   );
+
+  // Search Bar
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(searchTerm)
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
+      .then(data => {
+        setSearchResult(data.data);
+      })
+      .catch(err =>  alert("Nothing found"));
+  }
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value.toLowerCase());
+  }
 
   return (
     <div className="App">
@@ -50,7 +65,7 @@ export default function App () {
         Pokedex
       </div>
 
-      <SearchBar />
+      <SearchBar handleSubmit={handleSubmit} handleChange={handleChange} searchTerm={searchTerm} />
 
       {
         isLoading ? (
