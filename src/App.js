@@ -3,6 +3,7 @@ import {useQuery} from 'react-query';
 import axios from 'axios';
 
 import PokemonsContainer from './components/PokemonsContainer';
+import SearchBar from './components/SearchBar';
 
 import './styles/main.css';
 import PokeballHome from './svg/pokeballHome.svg';
@@ -48,6 +49,8 @@ export default function App () {
       <div className="title">
         Pokedex
       </div>
+
+      <SearchBar />
 
       {
         isLoading ? (
