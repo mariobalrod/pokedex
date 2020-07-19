@@ -1,6 +1,7 @@
 import React from 'react';
 
 import '../styles/card.css';
+import PokeballCard from '../svg/pokeballCard.svg';
 
 export default function PokemonCard (props) {
 
@@ -22,6 +23,7 @@ export default function PokemonCard (props) {
                     </div>
                 </div>
             </div>
+            <img className="pokeballCard" src={PokeballCard} alt="pokeball2" />
         </div>
     );
 }

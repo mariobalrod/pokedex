@@ -1,15 +1,15 @@
 
 * {
-    position: relative;
     background: #FFFFFF;
 }
 
 .title {
     position: relative;
-    width: 80%;
+    width: auto;
     height: 25px;
 
-    margin: 90px auto;
+    margin: 50px auto;
+    margin-left: 50px;
 
     font-family: Helvetica;
     font-style: normal;
@@ -20,6 +20,8 @@
     align-items: center;
 
     color: #303943;
+
+    background-color: transparent;
 }
 
 .buttonsContainer {
@@ -48,4 +50,12 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.pokeball {
+    position: fixed;
+    z-index: 0;
+    width: 249px;
+    top: 0px;  
+    right: 0px;  
 }

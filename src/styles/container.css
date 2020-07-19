@@ -4,13 +4,14 @@
     padding: 0px;
 
     width: 100%;
-    margin-top: 80px;
 
     position: relative;
 
     border: 2px solid transparent;
     justify-content: center;
     align-items: center;
+
+    background-color: transparent;
 }
 
 .row {
@@ -29,4 +30,6 @@
     justify-content: center;
     order: 2;
     align-self: center;
+
+    background-color: transparent;
 }

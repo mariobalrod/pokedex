@@ -5,6 +5,7 @@ import axios from 'axios';
 import PokemonsContainer from './components/PokemonsContainer';
 
 import './styles/main.css';
+import PokeballHome from './svg/pokeballHome.svg';
 
 //Time out
 axios.defaults.timeout = 2000;
@@ -41,16 +42,14 @@ export default function App () {
 
   return (
     <div className="App">
+
+      <img src={PokeballHome} className="pokeball" alt="pokeball"/>
+
       <div className="title">
         Pokedex
       </div>
 
-      <div className="pokeball">
-        
-      </div>
-
       {
-      
         isLoading ? (
           <div className="loading"></div>
         ) : error ? (
@@ -58,11 +57,11 @@ export default function App () {
         ) : (
           <PokemonsContainer pokemons={data} />
         )
-
       }
 
-      { 
 
+      {/* Pagination Container */}
+      { 
         !isLoading ? (
           <div className="buttonsContainer">
             <button
@@ -86,7 +85,6 @@ export default function App () {
         )
       
       }
-
     </div>
   );
 
